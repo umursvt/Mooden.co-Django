@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px){
+    nav img{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    .picture{
+        background-image: url(../mooden/logo.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 50px;
+    }
+
+    nav ul li{
+        margin: auto;
+    }
+}
+
+.cizgi{
+    width: 100px;
+    height: 2px;
+    border: 2px solid black;
+    background-color: black;
+    
+}
+
+.footer{
+    background:rgba(128, 128, 128, 0.28);
+}
+
+@media (max-width:720px){
+    .pictures img{
+        width: 95%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,472 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.html' %}">
+    <!-- FA cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- TinySlider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!-- Js for tiny-Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" ></script>
+    
+   
+    <script src="https://kit.fontawesome.com/6817205a99.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+      <!-- BLACK PART -->
+    <div class="container-fluid text-white bg-dark ">
+        <div class="row">
+            <div class="col-4 ps-5">
+              <h6>Contact Us
+              <i class="fa-regular fa-envelope ps-1 text-warning pe-1 "></i>
+              hello@mooden.co
+            </h6></div>
+            <div class="col-4 text-center"><h6>Get Free Shipping Offer!</h6></div>
+            <div class="col-4 text-end ">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle bg-dark border-0 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- NAV  -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-user ps-2"></i>
+         
+        </a>
+        <div class="picture"> </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5 ps-5 mt-1 " id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link  ms-2 text-dark fw-bold" aria-current="page" href="#">Garden & Pation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-5 ms-5 text-dark fw-bold" href="#">Metal Wall Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-5 ms-5 text-dark fw-bold" href="#">
+                <img src="{% static 'pic/logo.webp' %}" alt="logo">
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-5 ms-5 text-dark fw-bold " aria-current="page" href="#">Custom Signs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-5 ms-5 text-dark fw-bold " aria-current="page" href="#">Fire Pits & Rings</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div>
+        <a class="navbar-brand" href="#">
+          <i class="fa-regular fa-heart ps-3"></i>
+          <i class="fa-solid fa-bag-shopping ps-1"></i>
+          
+        </a>
+      </div>
+    </nav>  
+    <!-- NAV END -->
+
+    <!-- 4 BIG PICS -->
+    <div class="container mt-5 pictures">
+      <div class="row">
+        <div class=" col-xl-6 col-lg-6  ">
+          <img src="{% static 'pic/1.webp' %}" alt="1">
+        </div>
+        <div class="col-xl-6 col-lg-12">
+          <img src="{% static 'pic/2.webp' %}" alt="2">
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 pictures">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <img src="{% static 'pic/3.webp' %}" alt="1">
+        </div>
+        <div class="col-xl-6 col-lg-12">
+          <img src="{% static 'pic/4.jpg' %}" alt="2">
+        </div>
+      </div>
+    </div>
+    <!-- 4 BIG PICS -->
+    <div class="container mt-5 pt-5 text-center col-xl-6 col-lg-12">
+      <div class="row">
+        <div class="col-4 text-center ">
+          <i class="fa-solid fa-box fs-3 pb-3 "></i> 
+          <p>We guarantee quality packaging and fast shipping worldwide.</p>
+        </div>
+        <div class="col-4 text-center">
+          <i class="fa-solid fa-arrow-rotate-right fs-3 pb-3 "></i>  
+          <p>If you are not satisfied with your purchase for any reason, we can help!</p>
+        </div>
+        <div class="col-4 text-center">
+          <i class="fa-solid fa-wallet fs-3 pb-3"></i> 
+          <p>Our payment system guarantees secured methods for most credit and debit cards.</p>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="container d-flex justify-content-center my-5 ">
+    <div class="cizgi m-3"></div>
+    <div><h2>WALL ART DECORATION</h2></div>
+    <div class="cizgi m-3"></div>
+   </div>
+
+
+ <div class="container">
+  <div class="row justify-content-center">
+
+    {% comment %} DÖNGÜ BAŞLAT {% endcomment %}
+    {% for urun in urunler_metal %}
+      <div class="card me-5 my-3" style="width: 18rem;">
+        <img src="{{urun.resim.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{urun.baslik}}</h5>
+          <p class="card-text" style="text-decoration: line-through;" > {{urun.fiyat_eski}}</p>
+          <h6>{{urun.fiyat_guncel}}</h6>
+          <a href="#" class="btn btn-primary">Sepete Ekle</a>
+        </div>
+      </div>
+    {% endfor %}
+
+    
+
+    
+  </div>
+ </div>
+   
+
+
+
+
+<!-- BEST SELLER -->
+    <div class="container d-flex justify-content-center mt-5 ">
+      <div class="cizgi m-3"></div>
+      <div><h2>Best Seller</h2></div>
+      <div class="cizgi m-3"></div>
+    </div>
+    <div class="container text-center mb-5">
+      <div class="col-8 mx-auto">
+        <p><p>Our products have unique and wonderful designs that have become best sellers in different marketplaces.
+          These products with high ratings are now waiting for you at Mooden.co with the same quality and lower price.
+      </div>
+    </div>
+
+    <!-- METAL OLMAYAN URUNLER" -->
+ <div class="container mt-2">
+  <div class="row justify-content-center">
+    {% for urun in urunler_metal_degil %}
+      <div class="card me-5 my-3" style="width: 18rem;">
+        <img src="{{urun.resim.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{urun.baslik}}</h5>
+          <p class="card-text" style="text-decoration: line-through;" > {{urun.fiyat_eski}}</p>
+          <h6>{{urun.fiyat_guncel}}</h6>
+          <a href="#" class="btn btn-primary">Sepete Ekle</a>
+        </div>
+      </div>
+    {% endfor %}
+
+
+  </div>
+ </div>
+
+    <!-- Slider 2 -->
+    
+
+
+     
+<!-- COSTOMER SECTION -->
+    <div class="container my-5">
+      <div class="up">
+        <div class="row">
+          <div class="col-1">
+            <i class="fa-sharp fa-solid fa-comments fs-1 float-end"></i>
+          </div>
+          <div class="col-11">
+            <div>
+              <h4>2.000 + HAPPY CUSTOMERS</h4>
+            </div>
+            <div>
+              <h2>What folks are saying about us</h2>
+            </div>
+          </div>
+          <div class="row commands text-center">
+            <div class="col-xl-4 col-lg-12 border">
+              <p class=" px-5 py-3 " >
+                LOVE ... LOVE ... LOVE the Rooster and Chickens!!! 
+                These are beautifully made (just like in the images)
+                and will be such a garden conversation starter. 
+                They were well wrapped and packaged ... 
+                and arrived in Canada from Turkey in ONE week ... 
+                AWESOME!!! We will recommend this Shop to everyone!!! Thank you!!!
+              </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-4 p-4">
+                    <img src="{% static 'pic/icon.png' %}" alt="user">
+                  </div>
+                  <div class="col-7">
+                    <div><p>ASTHON</p></div>
+                    <div><p><b>Verified Buyer - Chicken Family</b></p></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-xl-4 col-l-12 border">
+              <p class=" px-5 py-3 " >
+                LOVE ... LOVE ... LOVE the Rooster and Chickens!!! 
+                These are beautifully made (just like in the images)
+                and will be such a garden conversation starter. 
+                They were well wrapped and packaged ... 
+                and arrived in Canada from Turkey in ONE week ... 
+                AWESOME!!! We will recommend this Shop to everyone!!! Thank you!!!
+              </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-4 p-4">
+                    <img src="{% static 'pic/icon.png' %}" alt="user">
+                  </div>
+                  <div class="col-7">
+                    <div><p>LIA</p></div>
+                    <div><p><b>Verified Buyer - Chicken Family</b></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 border">
+              <p class=" px-5 py-3 " >Awesome pit! Awesome quality, looks so but better in person, very
+                 fas shipping, so impressed! Also customer service was awesome,
+                  answered my questions right away! Great shopping experience!
+                Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet.
+          Lorem ipsum dolor sit.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-4 p-4">
+              <img src="{% static 'pic/icon.png' %}" alt="user">
+            </div>
+            <div class="col-7">
+              <div><p>JAQE</p></div>
+              <div><p><b>Verified Buyer - Custom Wall Art</b></p></div>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-flex justify-content-center my-5 ">
+      <div class="cizgi m-3"></div>
+      <div><h2>FIRE RINGS & PITS</h2></div>
+      <div class="cizgi m-3"></div>
+     </div>
+  
+ 
+ <div class="container mt-2">
+  <div class="row justify-content-center">
+    <!-- Buraya döngü gelecek -->
+  </div>
+ </div>
+
+   
+
+    
+    <div class="container text-center mt-5 mb-3">
+      <h2>Inspiration & Blog</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4" >
+          <img src="{% static 'pic/ins1.png' %}"  style="height: 315px;" class="img-fluid img-thumbnail"  alt="1">
+          <p class=" mt-2 " >
+            <b>5 GREAT RUSTED ORNAMENTS FOR YOUR GARDEN</b>
+          </p>
+          <p>You don't need a lot of money or an interior designer to organize your garden
+             in a modern and stylish way. Simple materials and creativity will be enough for
+              gardening.
+             For this, we have chosen 5 products for you with Rustic Garden Decoration.</p>
+
+        </div>
+        <div class="col-xl-4">
+          <img src="{% static 'pic/ins2.png' %}"  style="height: 315px;" class="img-fluid img-thumbnail"  alt="1">
+          <p class=" mt-2 " >
+            <b>6 Garden Decoration Ideas For Your Garden</b>
+          </p>
+          <p>
+            Do you want to evaluate the empty spaces in your garden, these 6 garden decorations we have arranged for you are just for you.
+
+These cute friends will pretty up to your garden and you will have a nice time with your guests.
+          </p>
+        </div>
+        <div class="col-xl-4">
+          <img src="{% static 'pic/ins3.png' %}" style="height: 315px;"  class="img-fluid img-thumbnail"   alt="1">
+          <p class=" mt-2 " >
+            <b>6 Garden Decoration Ideas For Your Garden</b>
+          </p>
+          <p>
+            Walls are at the beginning of home decorations, if you have a blank wall, it means that the decoration of your home is not completely finished. The walls should not be empty and plain.
+            Decorate your walls with Mooden to surprise your guests and decorate your empty walls.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- Form -->
+
+<div class="container d-flex justify-content-center my-5 ">
+  <div class="cizgi m-3"></div>
+  <div><h2>Contact Us</h2></div>
+  <div class="cizgi m-3"></div>
+ </div>
+
+<div class="container">
+  <div class="mb-3 mt-5">
+    <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label fw-bold ">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message this area" ></textarea>
+    <input class="btn btn-primary mt-3" type="submit" value="Submit">
+  </div>
+</div>
+
+
+
+
+
+
+
+    <footer>
+      <div class="container mt-5 footer">
+        <div class="row">
+          <div class="col-xl-3 mt-3">
+            <ul style="list-style:none;" >
+              <li>
+                <a style="text-decoration:none;" class="text-dark" href="#">Mooden.co</a>
+              </li>
+              <li class=" mt-4">
+                <a style="text-decoration:none;" class="text-dark  " href="#">Home</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Meet Us</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Product Review</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 mt-3">
+            <ul style="list-style:none;" >
+              <li>
+                <a style="text-decoration:none;" class="text-dark" href="#">Mooden.co</a>
+              </li>
+              <li class=" mt-4">
+                <a style="text-decoration:none;" class="text-dark  " href="#">Home</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Meet Us</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Product Review</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 mt-3">
+            <ul style="list-style:none;" >
+              <li>
+                <a style="text-decoration:none;" class="text-dark" href="#">Mooden.co</a>
+              </li>
+              <li class=" mt-4">
+                <a style="text-decoration:none;" class="text-dark  " href="#">Home</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Meet Us</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Product Review</a>
+              </li>
+              <li class=" mt-2">
+                <a style="text-decoration:none;" class="text-dark" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 mt-3">
+            <ul style="list-style:none;">
+              <li>
+                <a style="text-decoration:none;" class="text-dark" href="#">Follow Us</a></li>
+            </ul>
+            <div>
+              <i class="fa-brands fa-facebook me-2 ms-4 fs-3"></i>
+              <i class="fa-brands fa-instagram me-2 fs-3"></i>
+              <i class="fa-brands fa-pinterest me-2 fs-3"></i>
+              <i class="fa-brands fa-youtube me-5 fs-3"></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="{% static 'js/script.js' %}" ></script>
+
+
+
+    <script src="moodenjs.js"></script>
+    <!-- FA -->
+    <script src="https://kit.fontawesome.com/6817205a99.js" crossorigin="anonymous"></script>
+    <!-- FA -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
